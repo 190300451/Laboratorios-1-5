@@ -1,0 +1,1203 @@
+#lab1
+#!/bin/bash
+
+        echo "Comandos Basicos Para Moverse En Carpetas."
+
+        read -p "Bienvenidos joven ingeniero. Presiona ENTER para continuar."
+
+while [ $try 0 ];
+        do
+
+        echo -e "\nIdentifica El Directorio Actual (Pista: Imprime el directorio de trabajo)\n"
+        read R
+        if [ "$R" = "pwd" ]; then
+        echo -e "El Comando Ingresado Es Correcto."
+        $R
+
+        echo -e "\n\n"
+
+        break;
+
+        fi
+
+        done
+
+while [ $try 0 ];
+        do
+
+        echo -e "\nIdentifica El Directorio Actual (Crea el directorio de forma \  \)\n"
+        read R
+        if [ "$R" = "mkdir -v dir1" ]; then
+        echo -e "El Comando Que Ingreso Es Correcto."
+        $R
+
+        echo -e "\n\n"
+
+        break;
+
+        fi
+        done
+
+while [ $try 0 ];
+        do
+
+        echo -e "\nIdentifica El Directorio Actual (Pista: Crea el directorio de forma \  \)\n"
+        read R
+        if [ "$R" = "mkdir -v dir2" ]; then
+        echo -e "El Comando Ingresado Es Correcto."
+        $R
+echo -e "\n\n"
+
+        break;
+
+        fi
+        done
+
+while [ $try 0 ];
+        do
+
+        echo -e "\nIdentifica El Directorio Actual (Pista: Usa rutas relativas.)\n"
+        read R
+        if [ "$R" = "mkdir -v dir2/dir3" ]; then
+        echo -e "El Comando Ingresado Es Correcto."
+        $R
+
+        echo -e "\n\n"
+
+        break;
+
+        fi
+        done
+
+while [ $try 0 ];
+        do
+
+        echo -e "\nIdentifica El Directorio Actual (Pista: No olvides los directorios previos: -n)\n"
+        read R
+        if [ "$R" = "mkdir -v dir2/dir3/dir4" ]; then
+        echo -e "El Comando Ingresado Es Correcto."
+        $R
+
+        echo -e "\n\n"
+
+        break;
+
+        fi
+        done
+
+while [ $try 0 ];
+        do
+
+        echo -e "\nIdentifica El Directorio Actual (Pista: Lista recursivamente.)\n"
+        read R
+        if [ "$R" = "ls" ]; then
+        echo -e "El Comando Ingresado Es Correcto."
+        $R
+        echo -e "\n\n"
+
+        break;
+
+        fi
+        done
+
+while [ $try 0 ];
+        do
+
+        echo -e "\nIdentifica El Directorio Actual (Pista: Usa el comando para cambiar de directorio y solo un \ caracter.)\n"
+        read R
+        if [ "$R" = "ls -R" ]; then
+        echo -e "El Comando Ingresado Es Correcto."
+        $R
+
+        echo -e "\n\n"
+
+        break;
+
+        fi
+        done
+
+while [ $try 0 ];
+        do
+
+        echo -e "\nIdentifica El Directorio Actual (Pista: Usa el comando para cambiar de directorio con el argumento \ por default, no con ~.)\n"
+        read R
+        if [ "$R" = "cd dir2; pwd" ]; then
+        echo -e "El Comando Ingresado Es Correcto."
+        $R
+
+        echo -e "\n\n"
+
+        break;
+
+        fi
+        done
+
+#lab2
+#!/bin/bash
+
+echo "Crear archivos, desplegar su contenido y estadisticas."
+
+read -p "Bienvenidos joven ingeniero. Presiona ENTER para continuar."
+
+while [ $try 0 ];
+        do
+
+        echo -e "\n Pista: Usa la terminal para \"tocar\" un archivo vacío\n"
+        read R
+        if [ "$R" = "touch file1.txt" ]; then
+        echo -e "El Comando Ingresado Es Correcto."
+        $R
+
+        echo -e "\n\n"
+
+        break;
+
+        fi
+        done
+
+while [ $try 0 ];
+        do
+
+        echo -e "\n Pista: Es otro uso del comando anterior. \n"
+        read R
+        if [ "$R" = "touch file1.txt" ]; then
+        echo -e "El Comando Ingresado Es Correcto."
+        $R
+
+        echo -e "\n\n"
+
+        break;
+
+        fi
+        done
+
+while [ $try 0 ];
+        do
+
+        echo -e "\n Pista: Usa la terminal para \"tocar \" un archivo vacío \n"
+        read R
+        if [ "$R" = "touch file2.txt" ]; then
+        echo -e "El Comando Ingresado Es Correcto."
+        $R
+
+        echo -e "\n\n"
+
+        break;
+
+        fi
+        done
+
+while [ $try 0 ];
+        do
+
+        echo -e "\n Pista: Despliega el contenido del directorio actual usando un comando diferente \
+        a ls. \n"
+        read R
+        if [ "$R" = "dir" ]; then
+        echo -e "El Comando Ingresado Es Correcto."
+        $R
+
+        echo -e "\n\n"
+
+        break;
+
+while [ $try 0 ];
+        do
+
+        echo -e "\n Pista: se usa para limpiar el contenido de una terminal \n"
+        read R
+        if [ "$R" = "clear" ]; then
+        echo -e "El Comando Ingresado Es Correcto."
+        $R
+
+        echo -e "\n\n"
+
+        break;
+
+        fi
+        done
+while [ $try 0 ];
+        do
+
+        echo -e "\n Pista: ingresando este comando proyecta en pantalla \n"
+        read R
+        if [ "$R" = "echo \"hello\" ]; then
+        echo -e "El Comando Ingresado Es Correcto."
+        $R
+
+        echo -e "\n\n"
+
+        break;
+
+        fi
+        done
+
+        fi
+        done
+
+while [ $try 0 ];
+do
+
+        echo -e "\n Pista: Puede redirigir la salida como la del comando anterior\n"
+        read R
+        if [ "$R" = "echo \"hello\" > hello.txt"" ]; then
+        echo -e "El Comando Ingresado Es Correcto."
+        $R
+
+        echo -e "\n\n"
+
+        break;
+
+        fi
+        done
+
+while [ $try 0 ];
+        do
+
+        echo -e "\n Pista: Sirve para adjuntar un texto a un archivo (linux) \n"
+        read R
+        if [ "$R" = "echo \"linux\" >> hello.txt"" ]; then
+        echo -e "El Comando Ingresado Es Correcto."
+        $R
+
+        echo -e "\n\n"
+ break;
+
+        fi
+        done
+
+while [ $try 0 ];
+        do
+
+        echo -e "\n Es el mismmo comando anterior pero diferente nombre (world)  \n"
+        read R
+        if [ "$R" = "echo \"world\" >> hello.txt"" ]; then
+        echo -e "El Comando Ingresado Es Correcto."
+        $R
+
+        echo -e "\n\n"
+
+        break;
+
+        fi
+        done
+
+while [ $try 0 ];
+do
+
+        echo -e "\n Pista: Este comando sirve para desplegar el contenido en pantalla sobre hello.txt \n"
+        read R
+        if [ "$R" = "cat hello.txt" ]; then
+        echo -e "El Comando Ingresado Es Correcto."
+        $R
+
+        echo -e "\n\n"
+
+        break;
+
+        fi
+        done
+
+while [ $try 0 ];
+do
+
+        echo -e "\n Pista: Tienes que desplegar en pantalla el archivo que ingresaste llamado hello.txt pero este comando que debes ingresar no es el anterior carnal. \n"
+        read R
+        if [ "$R" = "head hello.txt" ]; then
+        echo -e "El Comando Ingresado Es Correcto."
+        $R
+
+        echo -e "\n\n"
+ break;
+
+        fi
+        done
+
+while [ $try 0 ];
+do
+
+        echo -e "\n Pista: Este comando es conocido por imprimir las dos ultimaslineas de un archivo (hello.txt) \n"
+        read R
+        if [ "$R" = "tail -2 hello.txt" ]; then
+        echo -e "El Comando Ingresado Es Correcto."
+        $R
+
+        echo -e "\n\n"
+
+        break;
+
+        fi
+        done
+
+while [ $try 0 ];
+do
+
+        echo -e "\n Pista: Es parecido al comando anterior solo que ahora este comando solo se enfoca en las ultimas lineas \n"
+        read R
+        if [ "$R" = "tail hello.txt" ]; then
+        echo -e "El Comando Ingresado Es Correcto."
+        $R
+
+        echo -e "\n\n"
+
+        break;
+
+        fi
+        done
+        
+        while [ $try 0 ];
+do
+
+        echo -e "\n Pista: Se enfoca en estadisticas de un archivo (hello.txt) \n"
+        read R
+        if [ "$R" = "stat hello.txt" ]; then
+        echo -e "El Comando Ingresado Es Correcto."
+        $R
+
+        echo -e "\n\n"
+
+        break;
+
+        fi
+        done
+
+while [ $try 0 ];
+do
+
+        echo -e "\n Es el mismo comando solo que ahora con dir crack -_- \n"
+        read R
+        if [ "$R" = "" ]; then
+        echo -e "El Comando Ingresado Es Correcto."
+        $R
+
+        echo -e "\n\n"
+
+        break;
+
+        fi
+        done
+        
+#lab3
+#!/bin/bash
+
+echo "Copiar, renombrar, borrar archivos."
+
+read -p "Bienvenidos joven ingeniero. Presiona ENTER para iniciar."
+#1
+while [ $try 0 ];
+        do
+
+        echo -e "\n Pista: Suena a la palabra do en ingles. \n"
+        read R
+        if [ "$R" = "du" ]; then
+        echo -e "El Comando Ingresado Es Correcto."
+        $R
+
+        echo -e "\n\n"
+
+        break;
+
+        fi
+        done
+#2
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: No olvidemos poner la (~), pero por el tiempo te recomiendo que optes por du --max-depth 3~ \n"
+    read R
+    if [ "$R" = "du -xh ~" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+    #3
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: Es la abreviacion de copy (dir2) \n"
+    read R
+    if [ "$R" = "cp -v hello.txt dir2" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#4
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: lo nombraras con dir2/file2.txt. \n"
+    read R
+    if [ "$R" = "cp -v hello.txt dir2/file2.txt" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#5
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: intenta con -vr con todos los archivos con la extension .txt de la carpeta dir2 a la carpeta dir2/dir3 \n"
+    read R
+    if [ "$R" = "cp -vr  dir2/*.txt dir2/dir3" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+    #6
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: vuelve a provar con -vr \n"
+    read R
+    if [ "$R" = "cp -vr dir2/dir3" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#7
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: su funcion es mostrar todo el contenido de una carpeta pero solo si actual. \n"
+    read R
+    if [ "$R" = "ls" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#8
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: su funcion es verificar la integridad de los archivos \n"
+    read R
+    if [ "$R" = "md5sum hello.txt" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+    #8
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: vuelve a verifcarlo con el mismo comando \n"
+    read R
+    if [ "$R" = "md5sum dir2/hello.txt" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#9
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: Sirve solamente para moverse \n"
+    read R
+    if [ "$R" = "mv hello.txt dir/2/dir3/dir4/hi.txt" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#10
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: Es parecido al is en ingles \n"
+    read R
+    if [ "$R" = "ls" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+    #11
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: Con este comando puedes crear carpetas seguramente \n"
+    read R
+    if [ "$R" = "mkdir dir5" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#12
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: Este comando te da el poder de mover todos los archivos de texto de preferencia muevelos de dir2 hacia dir5 carnal \n"
+    read R
+    if [ "$R" = "mv dir2/*.txt dir5" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#13
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: Posiblemente sea el poder solo que este creo puede renombrar \n"
+    read R
+    if [ "$R" = "mv dir5 dir50" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+    #14
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: Este comando otorga solamente creacion de enlaces pero no mentales \n"
+    read R
+    if [ "$R" = "ln dir2/dir3/dir4/hi.txt hello" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#14
+while [ $try 0 ];
+    do
+
+    echo -e "\n Verifica el inode de cada archivo \n"
+    read R
+    if [ "$R" = "stat hello" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#14
+while [ $try 0 ];
+    do
+
+    echo -e "\n verifica una vez mas -.- \n"
+    read R
+    if [ "$R" = "stat dir2/dir3/dir4/hi.txt" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#15
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: Con este comando puedes tener acceso directo llamado softlink \n"
+    read R
+    if [ "$R" = "ln -s dir2/dir3/dir4/hi.txt softlink" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#16
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: Ahora tienes el poder de hacer residuo con este comando pero solo puedes aniquilar a file2.txt. \n"
+    read R
+    if [ "$R" = "rm -i file2.txt" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#17
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: Solamente aniquila nuevamente con el comando anterior al neuvo dir5 \n"
+    read R
+    if [ "$R" = "rm -ir dir50/*" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+    #18
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: Ahora solamente aniquila a dir50 para siempre :v \n"
+    read R
+    if [ "$R" = "" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+
+#lab4
+#!/bin/bash
+
+#1
+echo "Comandos Basicos Para Administrar Procesos."
+
+ read -p "Bienvenido joven ingeniero. Presiona ENTER para continuar."
+
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: Su funcion es ejecutar y analizar una salida \n"
+    read R
+    if [ "$R" = "ps" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#2
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: como se escribe dormir en ingles. \n"
+    read R
+    if [ "$R" = "sleep 60 &" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+    while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: Este comando fue usado al princio de este proceso. \n"
+    read R
+    if [ "$R" = "ps" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#4
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: como se escribe asesinar en ingles. \n"
+    read R
+    if [ "$R" = "kill 12345" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#4
+while [ $try 0 ];
+    do
+
+    echo -e "\n verifica si lo asesinaste correctamente, pero como verificamos si el proceso sigue vivo? \n"
+    read R
+    if [ "$R" = "ps" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+    #5
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: esta forma de asesinar obliga al proceso a morir enviando una señal \n"
+    read R
+    if [ "$R" = "kill -p 12345" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#5
+while [ $try 0 ];
+    do
+
+    echo -e "\n verifica nuevamente si sigue vivo y para eso el comando para esto es? \n"
+    read R
+    if [ "$R" = "ps" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#6
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: este comando se escribe como dormir pero en ingles y sera utilizado para iniciar dos procesos, pero solo ingresaremos el primero. \n"
+    read R
+    if [ "$R" = "sleep 30 &" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#6
+while [ $try 0 ];
+    do
+
+    echo -e "\n Es el mismo que se utilizo en el anterior \n"
+    read R
+    if [ "$R" = "sleep 30 &" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#6
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista:Esta ocasion no asesinaras, pero si vericar que se haya ejecutado y para eso el comando adecuado para este trabajo es?\n"
+    read R
+    if [ "$R" = "ps" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+    #7
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: asesina todo los procesos que esten asociados al comando sleep. \n"
+    read R
+    if [ "$R" = "killall sleep" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#8
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: asesina todos los procesos que estan asociados actualmente. \n"
+    read R
+    if [ "$R" = "killall -u leonardo" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#9
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: asesina a todos los procesos asociados con find ejecutados por el usuario actual. \n"
+    read R
+    if [ "$R" = "killall -w find" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#10
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: Tienes que obtener el PID de un proceso llamado bash. \n"
+    read R
+    if [ "$R" = "pidof bash" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#11
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: Es conocido por visualizar los procesos. \n"
+    read R
+    if [ "$R" = "top" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#12
+while [ $try 0 ];
+    do
+
+    echo -e "\nUtiliza el comando pstree y analiza su salida. \n"
+    read R
+    if [ "$R" = "pstree -p" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+    #13
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: Se ingresa como tiempo pero en ingles. \n"
+    read R
+    if [ "$R" = "time ls -1" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+
+#lab5
+#!/bin/bash
+
+#1
+echo "Manipular o parsear contenido de archivos."
+
+ read -p "Bienvenido joven ingeniero. Presiona ENTER para continuar."
+
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: Que comando se necesita para buscar palabras en especial la de linux en especial un archivo que se llama como hola pero en ingles. \n"
+    read R
+    if [ "$R" = "grep "linux" hello" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#2
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: tendras que usar lo mismo para un hola pero en ingles pero general  \n"
+    read R
+    if [ "$R" = "grep -r "Hello"" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#3
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: tendras que irte a buscar en un lugar llamado hola pero en ingles y regresar imprimiendo un valor de lineas. \n"
+    read R
+    if [ "$R" = "grep -n "linux" hello" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#4
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: como despliegas lineas que no coinciden en un patron. \n"
+    read R
+    if [ "$R" = "grep -v "world" hello" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#5
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: como buscas una linea muy larga en un archivo? \n"
+    read R
+    if [ "$R" = "wc -L hello" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+    
+#6
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: que haces cuando ejecutas y que necesitaras agregar aparte de un contenido? \n"
+    read R
+    if [ "$R" = "echo -e "col1 col2 r1\ncol5 col6 r2\ncol3 col4 r3 " >> new.txt" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#6
+while [ $try 0 ];
+    do
+
+    echo -e "\n Continuacion al anterior. \n"
+    read R
+    if [ "$R" = "echo -e "Hello\nlinux\nProgrammers paradise" >> linux.txt" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+    
+    #7
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: Solamenete su unica funcion es mostrar columnas pero sola la primera. \n"
+    read R
+    if [ "$R" = "cut -f1 -d' ' new.txt" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#8
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: Necesitaras extraer una tercera columna que se necesita para esto? \n"
+    read R
+    if [ "$R" = "cut -f3 -d' ' new.tx" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#9
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: como mezclas lineas? \n"
+    read R
+    if [ "$R" = "paste -s hello new.txt" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+    
+    #10
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: tienes que ordenar contenidos de preferencia ordena new.txt \n"
+    read R
+    if [ "$R" = "sort new.txt" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
+#11
+while [ $try 0 ];
+    do
+
+    echo -e "\n Pista: tendras que comparar en este ultimo carnal. \n"
+    read R
+    if [ "$R" = "diff hello linux.txt" ]; then
+    echo -e "El Comando Ingresado Es Correcto."
+    $R
+
+    echo -e "\n\n"
+
+    break;
+
+    fi
+    done
